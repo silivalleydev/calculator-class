@@ -115,7 +115,7 @@ export default function Home() {
           <div className={styles.calculated}>
           {number}
           </div>
-          <div className={styles.row}>
+          <div>
             {/* button 태그는 가로로 쌓이며, 버튼의 모양을 가지고있는 태그입니다. */}
             <button className={styles.btn} >.</button>
             {/* onClick은 클릭했을때 이벤트를 발생시키는 속성입니다. 이 속성에는 함수를 넣어줍니다 */}
@@ -126,25 +126,25 @@ export default function Home() {
             <button className={styles.btn} onClick={() =>setNumber(0)}>AC</button>
             <button className={styles.btn} onClick={handleRemoveNumber}>{'<-'}</button>
           </div>
-          <div className={styles.row}>
+          <div>
             <button className={styles.btn} onClick={() =>handleChangeNumber(1)}>1</button>
             <button className={styles.btn} onClick={() =>handleChangeNumber(2)}>2</button>
             <button className={styles.btn} onClick={() =>handleChangeNumber(3)}>3</button>
             <button className={styles.btn} onClick={() =>handleClickOperation('+')}>+</button>
           </div>
-          <div className={styles.row}>
+          <div>
             <button className={styles.btn} onClick={() =>handleChangeNumber(4)}>4</button>
             <button className={styles.btn} onClick={() =>handleChangeNumber(5)}>5</button>
             <button className={styles.btn} onClick={() =>handleChangeNumber(6)}>6</button>
             <button className={styles.btn} onClick={() =>handleClickOperation('-')}>-</button>
           </div>
-          <div className={styles.row}>
+          <div>
             <button className={styles.btn} onClick={() =>handleChangeNumber(7)}>7</button>
             <button className={styles.btn} onClick={() =>handleChangeNumber(8)}>8</button>
             <button className={styles.btn} onClick={() =>handleChangeNumber(9)}>9</button>
             <button className={styles.btn} onClick={() =>handleClickOperation('*')}>*</button>
           </div>
-          <div className={styles.row}>
+          <div>
             <button className={styles.btn} onClick={() =>handleChangeNumber(0)}>0</button>
             <button className={styles.btn}>_</button>
             <button className={styles.btn} onClick={handleCalculation}>=</button>
